@@ -9,9 +9,9 @@ gem 'json'
 
 gem 'eventmachine', '~> 1.2', '>= 1.2.7'
 gem 'thin', '~> 1.8'
-gem 'sinatra', '~> 3.2'
-gem 'rack', '~> 2.2'
-gem 'rack-protection', '~> 3.2.0'
+gem 'sinatra', '~> 4.0', '>= 4.0.0'
+gem 'rack', '~> 2.2', '>= 2.2.8.1'
+gem 'rack-protection', '~> 4.0.0'
 gem 'em-websocket', '~> 0.5.3' # WebSocket support
 gem 'uglifier', '~> 4.2'
 gem 'mime-types', '~> 3.5'
@@ -83,7 +83,7 @@ group :test do
     # Note: nokogiri is needed by capybara which may require one of the below commands
     # sudo apt-get install libxslt-dev libxml2-dev
     # sudo port install libxml2 libxslt
-    gem 'capybara', '~> 3.39'
+    gem 'capybara', '~> 3.40', '>= 3.40.0'
 end
 
 source 'https://rubygems.org'
